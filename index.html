@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Primary SEO -->
+<title>Manjil Bhattarai | Software Engineer | AI Researcher | Portfolio</title>
+
+<meta name="description"
+      content="Official portfolio of Manjil Bhattarai, Software Engineer, Full Stack Developer, AI Researcher and Cybersecurity Enthusiast based in Kathmandu, Nepal. Explore projects, skills, research and professional work." />
+
+<meta name="keywords"
+      content="Manjil Bhattarai, Manzil Bhattarai, manjilbhattarai, Manjil, Bhattarai, Software Engineer, AI Researcher, Full Stack Developer, React Developer, JavaScript Developer, HTML, CSS, JavaScript, React, Node.js, Web Developer, Portfolio, Kathmandu Nepal, Cybersecurity, Machine Learning, Artificial Intelligence, Programming, Developer Portfolio" />
+
+<meta name="author" content="Manjil Bhattarai" />
+<meta name="robots" content="index, follow" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="http://manjilbhattarai27.com.np/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title"
+      content="Manjil Bhattarai | Software Engineer & AI Researcher" />
+<meta property="og:description"
+      content="Official portfolio of Manjil Bhattarai. Software Engineer, Full Stack Developer, AI Researcher and Cybersecurity Enthusiast." />
+<meta property="og:url" content="http://manjilbhattarai27.com.np/" />
+<meta property="og:image" content="http://manjilbhattarai27.com.np/preview.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title"
+      content="Manjil Bhattarai | Software Engineer & AI Researcher" />
+<meta name="twitter:description"
+      content="Official portfolio of Manjil Bhattarai. Software Engineer, Full Stack Developer, AI Researcher and Cybersecurity Enthusiast." />
+<meta name="twitter:image"
+      content="http://manjilbhattarai27.com.np/preview.jpg" />
+
+<!-- Geo -->
+<meta name="geo.region" content="NP" />
+<meta name="geo.placename" content="Kathmandu" />
+<meta name="geo.position" content="27.7172;85.3240" />
+
+<!-- Theme -->
+<meta name="theme-color" content="#0D1117" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manjil Bhattarai | Portfolio Coming Soon</title>
+  <meta name="description" content="Interactive portfolio of Manjil Bhattarai — Software Engineer & AI Researcher based in Kathmandu, Nepal. Launching soon." />
+  <meta property="og:title" content="Manjil Bhattarai | Portfolio Coming Soon" />
+  <meta property="og:description" content="Software Engineer & AI Researcher based in Kathmandu, Nepal. Portfolio launching soon." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0D1117;
+      --surface: #161B22;
+      --surface2: #1c2330;
+      --primary: #3B82F6;
+      --secondary: #8B5CF6;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 20px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: background 0.4s, border-color 0.4s;
+      border-bottom: 1px solid transparent;
+    }
+    nav.scrolled {
+      background: rgba(13,17,23,0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-color: var(--border);
+    }
+    .nav-logo { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    @media (max-width: 600px) { nav { padding: 14px 18px; } .nav-links { gap: 18px; } }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative; height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; overflow: hidden;
+    }
+    #canvas-container { position: absolute; inset: 0; z-index: 0; }
+    .hero-content {
+      position: relative; z-index: 10;
+      max-width: 660px; padding: 0 24px;
+      opacity: 0; transform: translateY(24px);
+      animation: fadeUp 1s ease 0.3s forwards;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 500; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--muted);
+      margin-bottom: 28px;
+      opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+    .eyebrow-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--primary); animation: pulse 2s infinite;
+    }
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-weight: 700; letter-spacing: -0.04em; line-height: 1.05;
+      margin-bottom: 20px;
+      opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 17px);
+      color: var(--muted); line-height: 1.7; margin-bottom: 44px;
+      opacity: 0; animation: fadeUp 0.8s ease 0.75s forwards;
+    }
+    .hero-sub strong { color: var(--text); font-weight: 500; }
+    .hero-actions {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px; border-radius: 8px;
+      font-size: 14px; font-weight: 500;
+      text-decoration: none; cursor: pointer; border: none;
+      transition: opacity 0.2s, transform 0.2s, background 0.2s, border-color 0.2s, color 0.2s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #2563eb; }
+    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+    .btn-ghost:hover { color: var(--text); border-color: var(--border2); }
+    .btn-sm { padding: 8px 16px; font-size: 13px; }
+
+    /* ── GAMES SECTION ── */
+    #games {
+      padding: 100px 24px 80px;
+    }
+    .section-label {
+      font-size: 11px; font-weight: 500; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--primary);
+      margin-bottom: 14px; text-align: center;
+    }
+    .section-heading {
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-weight: 700; letter-spacing: -0.03em;
+      text-align: center; margin-bottom: 10px;
+    }
+    .section-sub {
+      font-size: 15px; color: var(--muted); text-align: center;
+      max-width: 480px; margin: 0 auto 48px; line-height: 1.65;
+    }
+
+    /* Game tabs */
+    .game-tabs {
+      display: flex; gap: 8px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 32px;
+    }
+    .tab-btn {
+      padding: 8px 18px; border-radius: 6px; font-size: 13px; font-weight: 500;
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--border); cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { color: var(--text); border-color: var(--border2); }
+    .tab-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+    /* Game panels */
+    .game-panel { display: none; }
+    .game-panel.active { display: block; }
+
+    /* ── SUDOKU ── */
+    .sudoku-wrap {
+      max-width: 520px; margin: 0 auto;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 28px 24px;
+    }
+    .sudoku-header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
+    }
+    .sudoku-title { font-size: 16px; font-weight: 600; }
+    .sudoku-meta { display: flex; gap: 16px; align-items: center; }
+    .sudoku-timer { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .sudoku-diff {
+      display: flex; gap: 6px;
+    }
+    .diff-btn {
+      padding: 4px 10px; font-size: 11px; font-weight: 500; border-radius: 4px;
+      border: 1px solid var(--border); background: transparent;
+      color: var(--muted); cursor: pointer; transition: all 0.15s;
+    }
+    .diff-btn.active { background: var(--secondary); border-color: var(--secondary); color: #fff; }
+
+    .sudoku-grid {
+      display: grid; grid-template-columns: repeat(9,1fr);
+      gap: 1px; background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 6px; overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .sudoku-grid .box-right  { border-right: 2px solid rgba(255,255,255,0.25); }
+    .sudoku-grid .box-bottom { border-bottom: 2px solid rgba(255,255,255,0.25); }
+
+    .s-cell {
+      aspect-ratio: 1; background: var(--surface2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: clamp(12px, 2.5vw, 17px); font-weight: 500;
+      cursor: pointer; transition: background 0.15s, color 0.15s;
+      color: var(--text); user-select: none; position: relative;
+    }
+    .s-cell:hover:not(.given) { background: rgba(59,130,246,0.15); }
+    .s-cell.selected { background: rgba(59,130,246,0.3) !important; }
+    .s-cell.highlight { background: rgba(59,130,246,0.08); }
+    .s-cell.given { color: var(--text); font-weight: 700; cursor: default; }
+    .s-cell.user-filled { color: var(--primary); }
+    .s-cell.error { color: #f87171 !important; background: rgba(248,113,113,0.1) !important; }
+    .s-cell.complete { color: #4ade80 !important; }
+
+    .s-cell .note-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      width: 100%; height: 100%; position: absolute; inset: 0; padding: 1px;
+    }
+    .note-grid span {
+      font-size: clamp(6px, 1vw, 8px); color: var(--muted);
+      display: flex; align-items: center; justify-content: center;
+      line-height: 1;
+    }
+
+    .numpad {
+      display: grid; grid-template-columns: repeat(9,1fr); gap: 6px;
+      margin-bottom: 14px;
+    }
+    .num-btn {
+      aspect-ratio: 1; background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 6px; font-size: 15px; font-weight: 500;
+      color: var(--text); cursor: pointer; transition: all 0.15s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .num-btn:hover { background: rgba(59,130,246,0.2); border-color: var(--primary); }
+
+    .sudoku-actions {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .icon-btn {
+      padding: 8px 14px; background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 6px; font-size: 12px; font-weight: 500; color: var(--muted);
+      cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.15s;
+    }
+    .icon-btn:hover { color: var(--text); border-color: var(--border2); }
+    .icon-btn.note-active { border-color: var(--secondary); color: var(--secondary); }
+    .sudoku-msg {
+      margin-top: 12px; font-size: 13px; color: var(--muted);
+      min-height: 18px; text-align: center;
+    }
+    .sudoku-msg.win { color: #4ade80; font-weight: 600; }
+    .sudoku-msg.err { color: #f87171; }
+
+    /* ── 2048 ── */
+    .game2048-wrap {
+      max-width: 380px; margin: 0 auto;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 28px 24px;
+    }
+    .g2048-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;
+    }
+    .g2048-title { font-size: 16px; font-weight: 600; }
+    .score-box {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 6px 14px; text-align: center;
+    }
+    .score-label { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+    .score-val { font-size: 18px; font-weight: 700; }
+
+    .g2048-board {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 8px; background: rgba(255,255,255,0.06);
+      border-radius: 10px; padding: 8px; margin-bottom: 14px;
+    }
+    .g2048-cell {
+      aspect-ratio: 1; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: clamp(14px, 3vw, 22px); font-weight: 700;
+      transition: background 0.1s, color 0.1s;
+    }
+    .g2048-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+    /* ── SNAKE ── */
+    .snake-wrap {
+      max-width: 420px; margin: 0 auto;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 28px 24px;
+    }
+    .snake-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;
+    }
+    .snake-title { font-size: 16px; font-weight: 600; }
+    #snakeCanvas {
+      width: 100%; border-radius: 8px;
+      border: 1px solid var(--border); display: block;
+      background: var(--bg);
+    }
+    .snake-controls {
+      display: grid; grid-template-columns: repeat(3,40px);
+      gap: 6px; justify-content: center; margin-top: 14px;
+    }
+    .arrow-btn {
+      width: 40px; height: 40px; background: var(--surface2);
+      border: 1px solid var(--border); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 16px; transition: all 0.15s; color: var(--muted);
+    }
+    .arrow-btn:hover { background: rgba(59,130,246,0.2); color: var(--text); }
+
+    /* ── CONTACT ── */
+    #contact {
+      padding: 100px 24px 80px; text-align: center;
+    }
+    .contact-heading {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; letter-spacing: -0.03em; margin-bottom: 14px;
+    }
+    .contact-desc {
+      font-size: 15px; color: var(--muted); max-width: 420px;
+      margin: 0 auto 40px; line-height: 1.7;
+    }
+    .contact-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 26px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-text { font-size: 13px; color: var(--muted); }
+    .footer-loc {
+      font-size: 13px; color: var(--muted);
+      display: flex; align-items: center; gap: 6px;
+    }
+    @media (max-width: 600px) { footer { justify-content: center; text-align: center; padding: 22px 18px; } }
+
+    /* ── KEYFRAMES ── */
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,*::before,*::after { animation: none !important; transition: none !important; }
+      .hero-content,.hero-eyebrow,h1,.hero-sub,.hero-actions { opacity:1; transform:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">MB</a>
+  <ul class="nav-links">
+    <li><a href="#games">Play</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://github.com/mnzl010" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div id="canvas-container"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Interactive portfolio in progress
+    </div>
+    <h1>Manjil Bhattarai</h1>
+    <p class="hero-sub">
+      Software engineer and AI researcher based in <strong>Kathmandu, Nepal</strong> — working at the intersection of intelligent systems, full-stack engineering, and cybersecurity. Currently finishing a degree, building in public.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="#games" class="btn btn-ghost">Play while you wait</a>
+    </div>
+  </div>
+</section>
+
+<!-- GAMES -->
+<section id="games">
+  <p class="section-label">While You Wait</p>
+  <h2 class="section-heading">Play something</h2>
+  <p class="section-sub">The portfolio isn't ready yet — but these are. More games ship with the full site.</p>
+
+  <div class="game-tabs">
+    <button class="tab-btn active" onclick="switchGame('sudoku',this)">Sudoku</button>
+    <button class="tab-btn" onclick="switchGame('g2048',this)">2048</button>
+    <button class="tab-btn" onclick="switchGame('snake',this)">Snake</button>
+  </div>
+
+  <!-- SUDOKU -->
+  <div id="panel-sudoku" class="game-panel active">
+    <div class="sudoku-wrap">
+      <div class="sudoku-header">
+        <span class="sudoku-title">Sudoku</span>
+        <div class="sudoku-meta">
+          <span class="sudoku-timer" id="timer">00:00</span>
+          <div class="sudoku-diff">
+            <button class="diff-btn active" onclick="setSudokuDiff('easy',this)">Easy</button>
+            <button class="diff-btn" onclick="setSudokuDiff('medium',this)">Medium</button>
+            <button class="diff-btn" onclick="setSudokuDiff('hard',this)">Hard</button>
+          </div>
+        </div>
+      </div>
+      <div class="sudoku-grid" id="sudokuGrid"></div>
+      <div class="numpad" id="numpad"></div>
+      <div class="sudoku-actions">
+        <button class="icon-btn" onclick="eraseCell()">✕ Erase</button>
+        <button class="icon-btn" id="noteBtn" onclick="toggleNote()">✎ Notes</button>
+        <button class="icon-btn" onclick="hintCell()">💡 Hint</button>
+        <button class="icon-btn" onclick="newSudokuGame()" style="margin-left:auto">↺ New</button>
+      </div>
+      <div class="sudoku-msg" id="sudokuMsg"></div>
+    </div>
+  </div>
+
+  <!-- 2048 -->
+  <div id="panel-g2048" class="game-panel">
+    <div class="game2048-wrap">
+      <div class="g2048-header">
+        <span class="g2048-title">2048</span>
+        <div class="score-box">
+          <div class="score-label">Score</div>
+          <div class="score-val" id="score2048">0</div>
+        </div>
+      </div>
+      <div class="g2048-board" id="board2048"></div>
+      <div class="g2048-actions">
+        <button class="icon-btn" onclick="new2048Game()">↺ New Game</button>
+        <span style="font-size:12px;color:var(--muted);margin-left:auto">Arrow keys or swipe</span>
+      </div>
+      <div class="sudoku-msg" id="msg2048"></div>
+    </div>
+  </div>
+
+  <!-- SNAKE -->
+  <div id="panel-snake" class="game-panel">
+    <div class="snake-wrap">
+      <div class="snake-header">
+        <span class="snake-title">Snake</span>
+        <div class="score-box">
+          <div class="score-label">Score</div>
+          <div class="score-val" id="scoreSnake">0</div>
+        </div>
+      </div>
+      <canvas id="snakeCanvas" width="360" height="360"></canvas>
+      <div class="snake-controls">
+        <div></div>
+        <button class="arrow-btn" onclick="snakeDir(0,-1)">▲</button>
+        <div></div>
+        <button class="arrow-btn" onclick="snakeDir(-1,0)">◀</button>
+        <button class="arrow-btn" onclick="snakePause()">⏸</button>
+        <button class="arrow-btn" onclick="snakeDir(1,0)">▶</button>
+        <div></div>
+        <button class="arrow-btn" onclick="snakeDir(0,1)">▼</button>
+        <div></div>
+      </div>
+      <div class="sudoku-msg" id="msgSnake" style="margin-top:10px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Contact</p>
+  <h2 class="contact-heading">Let's connect</h2>
+  <p class="contact-desc">Open to collaborations, conversations, and opportunities.</p>
+  <div class="contact-links">
+    <a href="https://mail.google.com/mail/?view=cm&to=bhattaraimanjil321@gmail.com" target="_blank" rel="noopener" class="btn btn-primary">Email</a>
+    <a href="https://www.linkedin.com/in/manjil-bhattarai-6b3aa1281/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    <a href="https://github.com/mnzl010" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-text">&copy; 2026 Manjil Bhattarai. All rights reserved.</span>
+  <span class="footer-loc">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Kathmandu, Nepal
+  </span>
+</footer>
+
+<!-- THREE.JS -->
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const container = document.getElementById('canvas-container');
+const renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.setClearColor(0,0);
+container.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(60,1,0.1,100);
+camera.position.z = 3.5;
+
+const sphere = new THREE.Mesh(
+  new THREE.SphereGeometry(1.2,32,32),
+  new THREE.MeshBasicMaterial({color:0x3B82F6,wireframe:true,transparent:true,opacity:0.11})
+);
+scene.add(sphere);
+
+const N=180, pos=new Float32Array(N*3);
+for(let i=0;i<N;i++){
+  const phi=Math.acos(-1+(2*i)/N), theta=Math.sqrt(N*Math.PI)*phi, r=1.2;
+  pos[i*3]=r*Math.sin(phi)*Math.cos(theta);
+  pos[i*3+1]=r*Math.sin(phi)*Math.sin(theta);
+  pos[i*3+2]=r*Math.cos(phi);
+}
+const pg=new THREE.BufferGeometry(); pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0x8B5CF6,size:0.025,transparent:true,opacity:0.75}));
+scene.add(pts);
+
+const lm=new THREE.LineBasicMaterial({color:0x3B82F6,transparent:true,opacity:0.07});
+const thr=0.55*0.55;
+for(let i=0;i<N;i++) for(let j=i+1;j<N;j++){
+  const dx=pos[i*3]-pos[j*3],dy=pos[i*3+1]-pos[j*3+1],dz=pos[i*3+2]-pos[j*3+2];
+  if(dx*dx+dy*dy+dz*dz<thr){
+    const lg=new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(pos[i*3],pos[i*3+1],pos[i*3+2]),
+      new THREE.Vector3(pos[j*3],pos[j*3+1],pos[j*3+2])
+    ]);
+    scene.add(new THREE.Line(lg,lm));
+  }
+}
+
+const mouse={x:0,y:0},target={x:0,y:0};
+window.addEventListener('mousemove',e=>{
+  mouse.x=(e.clientX/innerWidth-0.5)*2;
+  mouse.y=(e.clientY/innerHeight-0.5)*2;
+});
+
+function resize(){
+  const w=container.offsetWidth,h=container.offsetHeight;
+  renderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix();
+}
+window.addEventListener('resize',resize); resize();
+
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',scrollY>40);
+});
+
+const clock=new THREE.Clock();
+(function animate(){
+  requestAnimationFrame(animate);
+  const t=clock.getElapsedTime();
+  target.x+=(mouse.x-target.x)*0.04; target.y+=(mouse.y-target.y)*0.04;
+  sphere.rotation.y=t*0.08+target.x*0.25; sphere.rotation.x=target.y*0.18;
+  pts.rotation.y=sphere.rotation.y; pts.rotation.x=sphere.rotation.x;
+  scene.children.forEach(o=>{if(o.isLine){o.rotation.y=sphere.rotation.y;o.rotation.x=sphere.rotation.x;}});
+  renderer.render(scene,camera);
+})();
+</script>
+
+<!-- GAME LOGIC -->
+<script>
+// ─── TAB SWITCH ───
+function switchGame(id,btn){
+  document.querySelectorAll('.game-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  btn.classList.add('active');
+  if(id==='snake') startSnake();
+  if(id==='g2048') init2048();
+}
+
+// ═══════════════════════════════════════════
+//   SUDOKU
+// ═══════════════════════════════════════════
+let S={
+  solution:[],puzzle:[],board:[],notes:[],
+  selected:null,noteMode:false,
+  difficulty:'easy',timerInterval:null,elapsed:0,
+  hintsLeft:3
+};
+
+const SUDOKU_PUZZLES = {
+  easy:[
+    "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+    "003020600900305001001806400008102900700000008006708200002609500800203009005010300",
+  ],
+  medium:[
+    "000000907000420180000705026100904000050000040000507009920108000034059000507000000",
+    "020000000000600003074080000600007500103000906000800007000030400700006020000150000",
+  ],
+  hard:[
+    "000000000000003085001020000000507000004000100090000000500000073002010000000040009",
+    "800000000003600000070090200060005300000300040000008900160000500000070004000000000",
+  ]
+};
+
+function parsePuzzle(str){ return str.split('').map(Number); }
+
+function solveSudoku(board){
+  const b=[...board];
+  function possible(b,pos,n){
+    const r=Math.floor(pos/9),c=pos%9;
+    for(let i=0;i<9;i++) if(b[r*9+i]===n||b[i*9+c]===n) return false;
+    const br=Math.floor(r/3)*3,bc=Math.floor(c/3)*3;
+    for(let i=0;i<3;i++) for(let j=0;j<3;j++) if(b[(br+i)*9+(bc+j)]===n) return false;
+    return true;
+  }
+  function solve(b){
+    for(let i=0;i<81;i++){
+      if(b[i]===0){
+        for(let n=1;n<=9;n++) if(possible(b,i,n)){b[i]=n;if(solve(b))return true;b[i]=0;}
+        return false;
+      }
+    }
+    return true;
+  }
+  solve(b); return b;
+}
+
+function newSudokuGame(){
+  const pool=SUDOKU_PUZZLES[S.difficulty];
+  const str=pool[Math.floor(Math.random()*pool.length)];
+  S.puzzle=parsePuzzle(str);
+  S.solution=solveSudoku([...S.puzzle]);
+  S.board=[...S.puzzle];
+  S.notes=Array.from({length:81},()=>new Set());
+  S.selected=null; S.noteMode=false;
+  S.hintsLeft=3;
+  clearInterval(S.timerInterval); S.elapsed=0; updateTimer();
+  S.timerInterval=setInterval(()=>{S.elapsed++;updateTimer();},1000);
+  document.getElementById('noteBtn').classList.remove('note-active');
+  document.getElementById('sudokuMsg').textContent='';
+  document.getElementById('sudokuMsg').className='sudoku-msg';
+  renderSudoku();
+}
+
+function setSudokuDiff(d,btn){
+  S.difficulty=d;
+  document.querySelectorAll('.diff-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  newSudokuGame();
+}
+
+function updateTimer(){
+  const m=String(Math.floor(S.elapsed/60)).padStart(2,'0');
+  const s=String(S.elapsed%60).padStart(2,'0');
+  document.getElementById('timer').textContent=m+':'+s;
+}
+
+function renderSudoku(){
+  const grid=document.getElementById('sudokuGrid');
+  grid.innerHTML='';
+  for(let i=0;i<81;i++){
+    const r=Math.floor(i/9),c=i%9;
+    const cell=document.createElement('div');
+    cell.className='s-cell';
+    if(S.puzzle[i]!==0) cell.classList.add('given');
+    if(i===S.selected) cell.classList.add('selected');
+    else if(S.selected!==null){
+      const sr=Math.floor(S.selected/9),sc=S.selected%9;
+      const sbr=Math.floor(sr/3),sbc=Math.floor(sc/3);
+      if(r===sr||c===sc||(Math.floor(r/3)===sbr&&Math.floor(c/3)===sbc))
+        cell.classList.add('highlight');
+    }
+    // thick box borders
+    if(c===2||c===5) cell.classList.add('box-right');
+    if(r===2||r===5) cell.classList.add('box-bottom');
+
+    if(S.board[i]!==0){
+      if(S.puzzle[i]===0){
+        cell.classList.add('user-filled');
+        if(S.board[i]!==S.solution[i]) cell.classList.add('error');
+      }
+      cell.textContent=S.board[i];
+    } else if(S.notes[i].size>0){
+      const ng=document.createElement('div'); ng.className='note-grid';
+      for(let n=1;n<=9;n++){
+        const sp=document.createElement('span');
+        sp.textContent=S.notes[i].has(n)?n:'';
+        ng.appendChild(sp);
+      }
+      cell.appendChild(ng);
+    }
+    cell.addEventListener('click',()=>selectCell(i));
+    grid.appendChild(cell);
+  }
+}
+
+function selectCell(i){
+  S.selected=i; renderSudoku();
+}
+
+function inputNum(n){
+  if(S.selected===null) return;
+  if(S.puzzle[S.selected]!==0) return;
+  const msg=document.getElementById('sudokuMsg');
+  if(S.noteMode){
+    if(S.board[S.selected]!==0) return;
+    if(S.notes[S.selected].has(n)) S.notes[S.selected].delete(n);
+    else S.notes[S.selected].add(n);
+  } else {
+    S.notes[S.selected].clear();
+    S.board[S.selected]=n;
+    if(S.board.every((v,i)=>v!==0&&v===S.solution[i])){
+      clearInterval(S.timerInterval);
+      msg.textContent='🎉 Solved in '+document.getElementById('timer').textContent+'!';
+      msg.className='sudoku-msg win';
+      return;
+    }
+    if(n!==S.solution[S.selected]){
+      msg.textContent='That doesn\'t look right.';
+      msg.className='sudoku-msg err';
+    } else { msg.textContent=''; msg.className='sudoku-msg'; }
+  }
+  renderSudoku();
+}
+
+function eraseCell(){
+  if(S.selected===null||S.puzzle[S.selected]!==0) return;
+  S.board[S.selected]=0; S.notes[S.selected].clear();
+  renderSudoku();
+}
+
+function toggleNote(){
+  S.noteMode=!S.noteMode;
+  document.getElementById('noteBtn').classList.toggle('note-active',S.noteMode);
+}
+
+function hintCell(){
+  if(S.hintsLeft<=0){document.getElementById('sudokuMsg').textContent='No hints left.';return;}
+  if(S.selected===null||S.puzzle[S.selected]!==0||S.board[S.selected]===S.solution[S.selected]) return;
+  S.board[S.selected]=S.solution[S.selected];
+  S.notes[S.selected].clear(); S.hintsLeft--;
+  document.getElementById('sudokuMsg').textContent='Hint used. '+S.hintsLeft+' left.';
+  document.getElementById('sudokuMsg').className='sudoku-msg';
+  renderSudoku();
+}
+
+// build numpad
+(function(){
+  const pad=document.getElementById('numpad');
+  for(let n=1;n<=9;n++){
+    const b=document.createElement('button');
+    b.className='num-btn'; b.textContent=n;
+    b.addEventListener('click',()=>inputNum(n));
+    pad.appendChild(b);
+  }
+})();
+
+document.addEventListener('keydown',e=>{
+  if(document.getElementById('panel-sudoku').classList.contains('active')){
+    if(e.key>='1'&&e.key<='9') inputNum(parseInt(e.key));
+    if(e.key==='Backspace'||e.key==='Delete'||e.key==='0') eraseCell();
+    if(e.key==='n'||e.key==='N') toggleNote();
+    const dirs={ArrowUp:-9,ArrowDown:9,ArrowLeft:-1,ArrowRight:1};
+    if(dirs[e.key]!==undefined&&S.selected!==null){
+      e.preventDefault();
+      const nxt=S.selected+dirs[e.key];
+      if(nxt>=0&&nxt<81) selectCell(nxt);
+    }
+  }
+});
+
+newSudokuGame();
+
+// ═══════════════════════════════════════════
+//   2048
+// ═══════════════════════════════════════════
+let G={grid:[],score:0,over:false};
+
+const TILE_COLORS={
+  0:'rgba(255,255,255,0.04)',
+  2:'#1e3a5f',4:'#1e4060',8:'#1a5276',16:'#1a6b9a',
+  32:'#2471a3',64:'#2e86c1',128:'#5b2c6f',
+  256:'#76448a',512:'#884ea0',1024:'#9b59b6',
+  2048:'#f0e130'
+};
+const TILE_TEXT={0:'var(--bg)',2:'#cfe2ff',4:'#cfe2ff',8:'#fff',16:'#fff',32:'#fff',64:'#fff',128:'#fff',256:'#fff',512:'#fff',1024:'#fff',2048:'#1a1a1a'};
+
+function init2048(){
+  G.grid=Array.from({length:4},()=>Array(4).fill(0));
+  G.score=0; G.over=false;
+  add2048Tile(); add2048Tile();
+  render2048(); document.getElementById('msg2048').textContent='';
+}
+
+function add2048Tile(){
+  const empty=[];
+  G.grid.forEach((row,r)=>row.forEach((v,c)=>{if(v===0)empty.push([r,c]);}));
+  if(!empty.length) return;
+  const [r,c]=empty[Math.floor(Math.random()*empty.length)];
+  G.grid[r][c]=Math.random()<0.9?2:4;
+}
+
+function render2048(){
+  const board=document.getElementById('board2048');
+  board.innerHTML='';
+  G.grid.forEach(row=>row.forEach(v=>{
+    const d=document.createElement('div');
+    d.className='g2048-cell';
+    d.style.background=TILE_COLORS[v]||'#6c3483';
+    d.style.color=TILE_TEXT[v]||'#fff';
+    d.textContent=v||'';
+    board.appendChild(d);
+  }));
+  document.getElementById('score2048').textContent=G.score;
+}
+
+function move2048(dir){
+  if(G.over) return;
+  const prev=JSON.stringify(G.grid);
+  function slide(row){
+    let r=row.filter(x=>x);
+    for(let i=0;i<r.length-1;i++) if(r[i]===r[i+1]){r[i]*=2;G.score+=r[i];r[i+1]=0;}
+    r=r.filter(x=>x);
+    while(r.length<4) r.push(0);
+    return r;
+  }
+  if(dir==='left') G.grid=G.grid.map(slide);
+  else if(dir==='right') G.grid=G.grid.map(r=>slide([...r].reverse()).reverse());
+  else if(dir==='up'){
+    for(let c=0;c<4;c++){
+      let col=G.grid.map(r=>r[c]);
+      col=slide(col);
+      G.grid.forEach((r,i)=>r[c]=col[i]);
+    }
+  } else if(dir==='down'){
+    for(let c=0;c<4;c++){
+      let col=G.grid.map(r=>r[c]).reverse();
+      col=slide(col).reverse();
+      G.grid.forEach((r,i)=>r[c]=col[i]);
+    }
+  }
+  if(JSON.stringify(G.grid)!==prev) add2048Tile();
+  render2048();
+  // check win/lose
+  if(G.grid.flat().includes(2048)){
+    document.getElementById('msg2048').textContent='🎉 You reached 2048!';
+    G.over=true; return;
+  }
+  const hasMoves=G.grid.flat().includes(0)||G.grid.some((row,r)=>row.some((v,c)=>
+    (c<3&&v===G.grid[r][c+1])||(r<3&&v===G.grid[r+1][c])
+  ));
+  if(!hasMoves){ document.getElementById('msg2048').textContent='Game over.'; G.over=true; }
+}
+
+function new2048Game(){ init2048(); }
+
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('panel-g2048').classList.contains('active')) return;
+  const map={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down'};
+  if(map[e.key]){e.preventDefault();move2048(map[e.key]);}
+});
+
+// touch swipe for 2048
+let t2={x:0,y:0};
+document.getElementById('board2048').addEventListener('touchstart',e=>{t2.x=e.touches[0].clientX;t2.y=e.touches[0].clientY;},{passive:true});
+document.getElementById('board2048').addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-t2.x, dy=e.changedTouches[0].clientY-t2.y;
+  if(Math.abs(dx)>Math.abs(dy)) move2048(dx>0?'right':'left');
+  else move2048(dy>0?'down':'up');
+},{passive:true});
+
+init2048();
+
+// ═══════════════════════════════════════════
+//   SNAKE
+// ═══════════════════════════════════════════
+let SN={snake:[],dir:{x:1,y:0},nextDir:{x:1,y:0},food:{x:0,y:0},score:0,interval:null,running:false,paused:false,SIZE:20};
+
+function startSnake(){
+  if(SN.running) return;
+  SN.SIZE=20;
+  SN.snake=[{x:5,y:10},{x:4,y:10},{x:3,y:10}];
+  SN.dir={x:1,y:0}; SN.nextDir={x:1,y:0};
+  SN.score=0; SN.paused=false; SN.running=true;
+  placeFood();
+  clearInterval(SN.interval);
+  SN.interval=setInterval(snakeTick,140);
+  document.getElementById('msgSnake').textContent='';
+  drawSnake();
+}
+
+function placeFood(){
+  do{SN.food={x:Math.floor(Math.random()*(360/SN.SIZE)),y:Math.floor(Math.random()*(360/SN.SIZE))};}
+  while(SN.snake.some(s=>s.x===SN.food.x&&s.y===SN.food.y));
+}
+
+function snakeTick(){
+  if(SN.paused) return;
+  SN.dir={...SN.nextDir};
+  const head={x:SN.snake[0].x+SN.dir.x,y:SN.snake[0].y+SN.dir.y};
+  const cols=360/SN.SIZE;
+  if(head.x<0||head.x>=cols||head.y<0||head.y>=cols||SN.snake.some(s=>s.x===head.x&&s.y===head.y)){
+    clearInterval(SN.interval); SN.running=false;
+    document.getElementById('msgSnake').textContent='Game over — score: '+SN.score+'. Click Start to replay.';
+    return;
+  }
+  SN.snake.unshift(head);
+  if(head.x===SN.food.x&&head.y===SN.food.y){
+    SN.score+=10; document.getElementById('scoreSnake').textContent=SN.score; placeFood();
+  } else SN.snake.pop();
+  drawSnake();
+}
+
+function drawSnake(){
+  const canvas=document.getElementById('snakeCanvas');
+  const ctx=canvas.getContext('2d');
+  const S=SN.SIZE, cols=canvas.width/S;
+  ctx.fillStyle='#0D1117'; ctx.fillRect(0,0,canvas.width,canvas.height);
+  // grid
+  ctx.strokeStyle='rgba(255,255,255,0.03)'; ctx.lineWidth=0.5;
+  for(let i=0;i<=cols;i++){
+    ctx.beginPath();ctx.moveTo(i*S,0);ctx.lineTo(i*S,canvas.height);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(0,i*S);ctx.lineTo(canvas.width,i*S);ctx.stroke();
+  }
+  // food
+  ctx.fillStyle='#8B5CF6';
+  ctx.beginPath();ctx.arc(SN.food.x*S+S/2,SN.food.y*S+S/2,S/2-2,0,Math.PI*2);ctx.fill();
+  // snake
+  SN.snake.forEach((seg,i)=>{
+    ctx.fillStyle=i===0?'#3B82F6':'rgba(59,130,246,'+(0.9-i*0.02)+')';
+    ctx.beginPath();ctx.roundRect(seg.x*S+1,seg.y*S+1,S-2,S-2,3);ctx.fill();
+  });
+}
+
+function snakeDir(dx,dy){
+  if(!SN.running) startSnake();
+  if(dx===1&&SN.dir.x===-1||dx===-1&&SN.dir.x===1) return;
+  if(dy===1&&SN.dir.y===-1||dy===-1&&SN.dir.y===1) return;
+  SN.nextDir={x:dx,y:dy};
+}
+
+function snakePause(){
+  if(!SN.running){startSnake();return;}
+  SN.paused=!SN.paused;
+  document.getElementById('msgSnake').textContent=SN.paused?'Paused':'';
+}
+
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('panel-snake').classList.contains('active')) return;
+  const map={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};
+  if(map[e.key]){e.preventDefault();snakeDir(...map[e.key]);}
+  if(e.key===' '){e.preventDefault();snakePause();}
+});
+
+// touch swipe snake
+let ts={x:0,y:0};
+document.getElementById('snakeCanvas').addEventListener('touchstart',e=>{ts.x=e.touches[0].clientX;ts.y=e.touches[0].clientY;if(!SN.running)startSnake();},{passive:true});
+document.getElementById('snakeCanvas').addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-ts.x, dy=e.changedTouches[0].clientY-ts.y;
+  if(Math.abs(dx)>Math.abs(dy)) snakeDir(dx>0?1:-1,0);
+  else snakeDir(0,dy>0?1:-1);
+},{passive:true});
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Manjil Bhattarai",
+ "alternateName": [
+   "Manzil Bhattarai",
+   "manjilbhattarai"
+ ],
+ "jobTitle": "Software Engineer",
+ "description": "Software Engineer, AI Researcher and Full Stack Developer",
+ "url": "http://manjilbhattarai27.com.np",
+ "sameAs": [
+   "https://github.com/mnzl010",
+   "https://www.linkedin.com/in/manjil-bhattarai-6b3aa1281/"
+ ],
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Kathmandu",
+   "addressCountry": "Nepal"
+ }
+}
+</script>
+</body>
+</html>
